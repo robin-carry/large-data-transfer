@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "37cc50a8-aca9-4833-98c0-6a97533a3172",
+		"name": "Stackoverflow Question",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "stackoverflow-request-op1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "inputFile",
+							"type": "file",
+							"src": "/Users/i044312/Desktop/FileSize6MB.pdf"
+						},
+						{
+							"key": "operation",
+							"value": "op1",
+							"type": "text"
+						},
+						{
+							"key": "fileNameSuffix",
+							"value": "converteddata.dat",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9090/upload/op",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"upload",
+						"op"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "stackoverflow-request-op2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "inputFile",
+							"type": "file",
+							"src": "/private/var/folders/gj/3dd7zv6s7tx5tg6b2g836l700000gn/T/ResponseFile_1607838891815.dat"
+						},
+						{
+							"key": "operation",
+							"value": "op2",
+							"type": "text"
+						},
+						{
+							"key": "fileNameSuffix",
+							"value": "Fixed.pptx",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9090/upload/op",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"upload",
+						"op"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
