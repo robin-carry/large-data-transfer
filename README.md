@@ -27,3 +27,17 @@ On the `client` size the response received is then written into a `temp-folder`.
 -- Stripes the initial 16bytes
 -- Reads the next 6 bytes to find out the length of next bytes to be read
 -- Reads the bytes as identified in the previous step.  
+
+# Problem Facing Currently
+
+1. Unable to understand if Spring WebFlux can solve this problem?
+2. For smaller file `op1` works, but for large files it get stuck `op2` - somehow something is wrong with streams internally, but can't pinpoint it. See below images
+3. `op2` doesn't work for any of the scenarios (smaller file or larger files)
+
+## This one works
+
+![WORKS](https://github.com/robin-carry/large-data-transfer/blob/main/add-ons/so-Upto1MB-transfer-works.png)
+
+## This one doesn't (get stuck)
+
+![WORKS](https://github.com/robin-carry/large-data-transfer/blob/main/add-ons/so-For6MB-transfer-gets-stuck.png)
